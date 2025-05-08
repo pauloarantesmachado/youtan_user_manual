@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtan Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<head>
+    <title>Youtan Dash - Manual do Usuário</title>
+  </head>
+  
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Manual do Usuário Youtan Dash</h1>
+      </header>
+      <ol id="nav-list">
+        <a href="#Introduction" class="nav-link"><li>1.Introdução</li></a>
+        <a href="#Summary" class="nav-link"><li>2.Objetivo do projeto</li></a>
+        <a href="#Operator" class="nav-link"><li>3.Tela e componentes do operador</li></a>
+        <a href="#Manager" class="nav-link"><li>4.Tela e componentes do Gestor</li></a>
+        <a href="#Admin" class="nav-link"><li>5.Tela e componentes do Admin</li></a>
+      </ol>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>
+          <h2>Introdução</h2>
+        </header>
+        <article>
+          <p>
+            Este manual orienta sobre o uso do sistema Youtan Dashboard, detalhando as funcionalidades disponíveis para cada perfil de usuário (Operador, Gestor e Admin) e explicando como aproveitar ao máximo seus recursos.
+          </p>
+          <p>
+            O sistema possui três níveis de acesso, cada um correspondente a uma persona:
+          </p>
+          <ul>
+            <li><b>Operador:</b> pode acessar informações relacionadas ao seu próprio desempenho, incluindo os KPIs associados.</li>
+            <li><b>Gestor:</b> pode visualizar informações pertinentes à sua função e aos indicadores de desempenho (KPIs) da equipe que gerencia.</li>
+            <li><b>Administrador:</b> pode visualizar os KPIs de todos os projetos, cadastrar novos usuários e consultar os logs do sistema.</li>
+          </ul>
+          <p>Disponibilizamos os seguintes links úteis:</p>
+          <ul>
+            <li>Página de Requisitos: <a href="https://youtan-req.vercel.app/#Introduction">Requisitos</a></li>
+            <li>Repositório GitHub: <a href="https://github.com/manolito-fatec/dashflow-2025-1">GitHub</a></li>
+          </ul>
+        </article>
+      </section>
+      <hr>
+      <section id="Summary" class="main-section">
+        <header>
+          <h2>Objetivo do Projeto</h2>
+        </header>
+        <article>
+          <p>
+            O objetivo do projeto é desenvolver uma plataforma integrada à ferramenta de gestão de projetos Taiga, que permita gerar e visualizar indicadores relacionados ao andamento dos projetos. O dashboard oferece métricas como a quantidade de cards criados e finalizados, tempo médio de execução, distribuição de tarefas por colaborador e outros indicadores relevantes.
+          </p>
+          <p>
+            A plataforma possui diferentes níveis de acesso: Operador, Gestor e Admin, garantindo que cada usuário visualize apenas as informações pertinentes ao seu perfil. O projeto visa facilitar o acompanhamento do progresso dos projetos, promovendo eficiência, transparência e acessibilidade.
+          </p>
+        </article>
+      </section>
+      <hr>
+      <section id="Operator" class="main-section">
+        <header>
+          <h2>1. Operador</h2>
+        </header>
+        <article>
+          <p>O acesso ao Youtan Dashboard requer uma conta criada pelo Admin. Com suas credenciais (nome de usuário e senha), o operador poderá realizar login e visualizar suas informações, desde que existam dados disponíveis no Data Warehouse (DW).</p>
+          <h3>Tela de Login:</h3>
+          <img src="./img/login.png" width="612" height="450" alt="Tela de login">
+          <h3>Dashboard do Operador:</h3>
+          <p>Exibe os KPIs individuais, com menu lateral contendo acesso ao perfil e logout.</p>
+          <img src="./img/operator-dash.png" width="612" height="450" alt="Dashboard do operador">
+          <h3>Tela de Perfil:</h3>
+          <p> Exibe informações do usuário.</p>
+          <img src="./img/profile.png" width="612" height="450" alt="Perfil">
+          <h3>Cards do Operador:</h3>
+          <p> Informações sobre cards atribuídos, tempo médio de conclusão e projetos envolvidos.</p>
+          <div>
+            <img src="./img/total_cards_operator.png" width="200" height="100" alt="Cards do operador">
+            <img src="./img/average_time_operator.png" width="200" height="100" alt="Media cards operador">
+            <img src="./img/total_project_operator.png" width="200" height="100" alt="Total de projetos">
+          </div>
+          <h3>Cards por Status:</h3>
+          <p> Visualização dos cards por status, com filtro por projeto.</p>
+          <img src="./img/cards_by_project_status.png" width="612" height="450" alt="Cards por status">
+          <h3>Cards Criados e Finalizados:</h3>
+          <p> Mostra cards criados/concluídos em um período, com filtro por data.</p>
+          <img src="./img/cards_by_period.png" width="612" height="450" alt="Cards por período">
+        </article>
+      </section>
+      <hr>
+      <section id="Manager" class="main-section">
+        <header>
+          <h2>2. Gestor</h2>
+        </header>
+        <article>
+          <p>O acesso do Gestor ao Youtan Dash requer uma conta criada pelo Admin. Após a criação da conta, o Gestor poderá realizar o login usando as credenciais fornecidas (nome de usuário e senha). <strong>Observação:</strong> A visualização das informações depende da disponibilidade de dados no Data Warehouse (DW).</p>
+      
+          <h3>Tela de Login:</h3>
+          <p> Ao inserir corretamente o usuário e senha, o Gestor terá acesso à aplicação, sendo direcionado para o dashboard.</p>
+          <img src="./img/login.png" alt="Tela de Login" width="612">
+      
+          <h3>Dashboard do Gestor:</h3>
+          <p> Apresenta os KPIs da equipe gerenciada, com visualização clara e objetiva. Possui um menu lateral (sidebar) com opções de acesso ao perfil e logout.</p>
+          <img src="./img/gestor-dash.png" alt="Dashboard do Gestor" width="612">
+      
+          <h3>Tela de Perfil:</h3>
+          <p> Mostra os dados do Gestor.</p>
+          <img src="./img/profile.png" alt="Tela de Perfil" width="612">
+      
+          <h3>Cartões do Gestor:</h3>
+          <p> Exibe total de cards por operador, cards atribuídos ao Gestor, tempo médio por equipe e quantidade de retrabalhos.</p>
+          <div>
+            <img src="./img/cards_by_operator_manager.png" alt="Cartões por Operador" width="300">
+            <img src="./img/cards_by_manager.png" width="300">
+            
+          </div>
+          <div>
+            <img src="./img/average_time_manager.png" width="300">
+            <img src="./img/rework.png" width="300">
+          </div>
+          
+      
+          <h3>Cards por Status:</h3>
+          <p> Gráfico de pizza com filtros por projeto.</p>
+          <img src="./img/status_cards_manager.png" alt="Cards por Status" width="612" height="450">
+      
+          <h3>Cards Criados/Finalizados:</h3>
+          <p>Visualização de cards em período filtrável.</p>
+          <img src="./img/cards_by_period.png" alt="Cards Criados e Finalizados" width="612" height="450">
+      
+          <h3>Issues por Projeto:</h3>
+          <p> Mostra quantidade de issues com filtros por tipo e prioridade.</p>
+          <img src="./img/issues_by_project.png" alt="Issues por Projeto" width="612">
+  
+          <h3>Tags por Projeto:</h3>
+          <p> Exibe quantidade de tags com filtros por projeto.</p>
+          <img src="./img/tags_by_project.png" alt="Tags por Projeto" width="612">
+        </article>
+      </section>
+      <hr>
+      <section id="Admin" class="main-section">
+        <header>
+          <h2>3. Admin</h2>
+        </header>
+        <article>
+          <p>O acesso do Admin também requer uma conta criada previamente. Após o login com credenciais válidas, o Admin poderá acessar os recursos administrativos. <strong>Observação:</strong> A visualização depende dos dados disponíveis no Data Warehouse (DW).</p>
+      
+          <h3>Tela de Login:</h3>
+          <img src="./img/login.png" alt="Tela de Login" width="612px">
+      
+          <h3>Dashboard do Admin:</h3>
+          <p> Exibe os KPIs dos projetos, possui opções no menu lateral: "Profile", criação de usuários, visualização de logs e logout. Contém botão de exportação CSV.</p>
+          <img src="./img/admin-dash.png" alt="Cartões do Admin" width="612">
+          <h3>Função Exportar:</h3>
+          <p>Foi adicionado um botão na interface do painel de administração para permitir a exportação dos dados exibidos na tela em formato CSV.</p>
+          <img src="./img/export_button.png" width="612">
+          <h3>Cartões do Admin:</h3>
+          <p>Apresenta a quantidade de cartões por projeto por meio de um filtro, enquanto um segundo cartão demonstra o total de projetos.</p>
+          <div>
+            <img src="./img/total_cards_admin.png" width="300" height="100">
+            <img src="./img/total_projects_admin.png" width="300" height="100">
+          </div>
+          <h3>Cards por Período:</h3>
+          <p> Exibe cards criados/finalizados em período filtrável.</p>
+          <img src="./img/cards_by_period.png" alt="Cards por Período" width="612px" height="500">
+          <h3>Issues por Projeto:</h3>
+          <p> Exibe quantidade de issues com filtros.</p>
+          <img src="./img/issues_by_project.png" alt="Issues por Projeto" width="612px">
+          <h3>Tabela de Projetos:</h3>
+          <p> Visualiza informações por linha: gerente responsável, número de operadores.</p>
+          <img src="./img/table_project.png" alt="Tabela de Projetos" width="612px" height="600">
+          <h3>Tela de Cadastro de Usuário:</h3>
+          <p> Permite cadastrar usuários, selecionar ferramenta de gestão (Taiga, Trello ou Jira) e associar a projetos e usuários.</p>
+          <img src="./img/screen-register.png" alt="Cadastro de Usuário" width="612px">
+      
+          <h3>Formulário de Registro:</h3> 
+          <p>Campos obrigatórios:</p>
+          <ul>
+            <li><strong>FullName:</strong> Nome completo (até 255 caracteres)</li>
+            <li><strong>Username:</strong> Até 60 caracteres</li>
+            <li><strong>Password:</strong> Senha de acesso</li>
+            <li><strong>E-mail:</strong> E-mail válido</li>
+            <li><strong>Role:</strong> ROLE_OPERATOR, ROLE_MANAGER ou ROLE_ADMIN</li>
+            <li><strong>Tools:</strong>Escolha da ferramenta de gestão de projetos, Taiga, Trello ou Jira</li>
+            <li><strong>Project-Tool:</strong> Lista de projetos da ferramenta escolhida</li>
+            <li><strong>User Project-Tool:</strong> Lista de usuários do projeto escolhido</li>
+          </ul>
+          <p>Botão Clean up: limpa os dados dos campos</p>
+          <p>Botão Register: Registra o novo usuário</p>
+          <img src="./img/form_register.png" alt="Formulário de Registro" width="612px">
+          <h3>Tabela de Usuários:</h3>
+          <p> Lista usuários ativos, com opções para atualizar ou excluir dados.</p>
+          <img src="./img/table-of-users.png" alt="Tabela de Usuários" width="612px">
+          <h3>Log do Sistema:</h3>
+          <p> Exibe ações realizadas no sistema: usuário, ação executada e data.</p>
+          <img src="./img/system_log.png" alt="Log do Sistema" width="612px">
+          
+        </article>
+      </section>
+      <hr>
+    </main>
+    <footer> 
+      <p>
+        © Copyright 2025 Manolito
+      </p> 
+    </footer>
+  </body>
