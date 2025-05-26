@@ -69,13 +69,13 @@
         <article>
           <p>O acesso ao Youtan Dashboard requer uma conta criada pelo Admin. Com suas credenciais (nome de usuário e senha), o operador poderá realizar login e visualizar suas informações, desde que existam dados disponíveis no Data Warehouse (DW).</p>
           <h3>Tela de Login:</h3>
-          <img src="./img/login.png" width="612" height="450" alt="Tela de login">
+          <img src="./img/login.png" width="412" height="250" alt="Tela de login">
           <h3>Dashboard do Operador:</h3>
           <p>Exibe os KPIs individuais, com menu lateral contendo acesso ao perfil e logout.</p>
-          <img src="./img/operator-dash.png" width="612" height="450" alt="Dashboard do operador">
+          <img src="./img/operatorScreen.png" width="412" height="250" alt="Dashboard do operador">
           <h3>Tela de Perfil:</h3>
           <p> Exibe informações do usuário.</p>
-          <img src="./img/profile.png" width="612" height="450" alt="Perfil">
+          <img src="./img/operator_profile.png" width="412" height="250" alt="Perfil">
           <h3>Cards do Operador:</h3>
           <p> Informações sobre cards atribuídos, tempo médio de conclusão e projetos envolvidos.</p>
           <div>
@@ -85,10 +85,10 @@
           </div>
           <h3>Cards por Status:</h3>
           <p> Visualização dos cards por status, com filtro por projeto.</p>
-          <img src="./img/cards_by_project_status.png" width="612" height="450" alt="Cards por status">
+          <img src="./img/cards_by_project_status.png" width="412" height="250" alt="Cards por status">
           <h3>Cards Criados e Finalizados:</h3>
-          <p> Mostra cards criados/concluídos em um período, com filtro por data.</p>
-          <img src="./img/cards_by_period.png" width="612" height="450" alt="Cards por período">
+          <p> Mostra cards de um projeto criados/concluídos em um período, com filtro por data.</p>
+          <img src="./img/cards_by_period.png" width="412" height="250" alt="Cards por período">
         </article>
       </section>
       <hr>
@@ -101,15 +101,15 @@
       
           <h3>Tela de Login:</h3>
           <p> Ao inserir corretamente o usuário e senha, o Gestor terá acesso à aplicação, sendo direcionado para o dashboard.</p>
-          <img src="./img/login.png" alt="Tela de Login" width="612">
+          <img src="./img/login.png" alt="Tela de Login" width="412">
       
           <h3>Dashboard do Gestor:</h3>
           <p> Apresenta os KPIs da equipe gerenciada, com visualização clara e objetiva. Possui um menu lateral (sidebar) com opções de acesso ao perfil e logout.</p>
-          <img src="./img/gestor-dash.png" alt="Dashboard do Gestor" width="612">
+          <img src="./img/gestor-dash.png" alt="Dashboard do Gestor" width="412">
       
           <h3>Tela de Perfil:</h3>
           <p> Mostra os dados do Gestor.</p>
-          <img src="./img/profile.png" alt="Tela de Perfil" width="612">
+          <img src="./img/manager_profile.png" alt="Tela de Perfil" width="412">
       
           <h3>Cartões do Gestor:</h3>
           <p> Exibe total de cards por operador, cards atribuídos ao Gestor, tempo médio por equipe e quantidade de retrabalhos.</p>
@@ -122,23 +122,31 @@
             <img src="./img/average_time_manager.png" width="300">
             <img src="./img/rework.png" width="300">
           </div>
-          
-      
+          <h3>Função Exportar:</h3>
+          <p>Foi adicionado um botão na interface do painel do manager para permitir a exportação dos dados exibidos na tela em formato CSV.</p>
+          <p>Para a exibição do CSV na tela do manager será:</p>
+          <ul>
+            <li>Operador</li> 
+            <li>Projeto</li>
+           <li>Quantidade de cards</li>
+         </ul>
+          <img src="./img/export_button.png" width="412">
+    
           <h3>Cards por Status:</h3>
-          <p> Gráfico de pizza com filtros por projeto.</p>
-          <img src="./img/status_cards_manager.png" alt="Cards por Status" width="612" height="450">
-      
+          <p> Gráfico de pizza com filtros por projeto monstrando a quantidade de cards por status.</p>
+          <img src="./img/status_card.png" alt="Cards por Status" width="412" height="200">
+         
           <h3>Cards Criados/Finalizados:</h3>
-          <p>Visualização de cards em período filtrável.</p>
-          <img src="./img/cards_by_period.png" alt="Cards Criados e Finalizados" width="612" height="450">
+          <p>Visualização de cards de um projeto em período filtrável.</p>
+          <img src="./img/cards_by_period.png" alt="Cards Criados e Finalizados" width="412" height="250">
       
           <h3>Issues por Projeto:</h3>
           <p> Mostra quantidade de issues com filtros por tipo e prioridade.</p>
-          <img src="./img/issues_by_project.png" alt="Issues por Projeto" width="612">
+          <img src="./img/issues_by_project.png" alt="Issues por Projeto" width="412">
   
           <h3>Tags por Projeto:</h3>
           <p> Exibe quantidade de tags com filtros por projeto.</p>
-          <img src="./img/tags_by_project.png" alt="Tags por Projeto" width="612">
+          <img src="./img/tags_by_project.png" alt="Tags por Projeto" width="412">
         </article>
       </section>
       <hr>
@@ -150,14 +158,21 @@
           <p>O acesso do Admin também requer uma conta criada previamente. Após o login com credenciais válidas, o Admin poderá acessar os recursos administrativos. <strong>Observação:</strong> A visualização depende dos dados disponíveis no Data Warehouse (DW).</p>
       
           <h3>Tela de Login:</h3>
-          <img src="./img/login.png" alt="Tela de Login" width="612px">
+          <img src="./img/login.png" alt="Tela de Login" width="412px">
       
           <h3>Dashboard do Admin:</h3>
           <p> Exibe os KPIs dos projetos, possui opções no menu lateral: "Profile", criação de usuários, visualização de logs e logout. Contém botão de exportação CSV.</p>
-          <img src="./img/admin-dash.png" alt="Cartões do Admin" width="612">
+          <img src="./img/admin-dash.png" alt="Cartões do Admin" width="412">
           <h3>Função Exportar:</h3>
           <p>Foi adicionado um botão na interface do painel de administração para permitir a exportação dos dados exibidos na tela em formato CSV.</p>
-          <img src="./img/export_button.png" width="612">
+          <p>Para a exibição do CSV na tela do Admin será:</p>
+          <ul>
+            <li>Projeto</li>
+            <li>Gestor</li>
+            <li>Quantidade de operadores</li>
+            <li>Quantidade de cards</li>
+         </ul>
+          <img src="./img/export_button.png" width="412">
           <h3>Cartões do Admin:</h3>
           <p>Apresenta a quantidade de cartões por projeto por meio de um filtro, enquanto um segundo cartão demonstra o total de projetos.</p>
           <div>
@@ -166,17 +181,19 @@
           </div>
           <h3>Cards por Período:</h3>
           <p> Exibe cards criados/finalizados em período filtrável.</p>
-          <img src="./img/cards_by_period.png" alt="Cards por Período" width="612px" height="500">
+          <img src="./img/cards_by_period.png" alt="Cards por Período" width="412px" height="250">
           <h3>Issues por Projeto:</h3>
           <p> Exibe quantidade de issues com filtros.</p>
-          <img src="./img/issues_by_project.png" alt="Issues por Projeto" width="612px">
+          <img src="./img/issues_by_project.png" alt="Issues por Projeto" width="412px">
           <h3>Tabela de Projetos:</h3>
           <p> Visualiza informações por linha: gerente responsável, número de operadores.</p>
-          <img src="./img/table_project.png" alt="Tabela de Projetos" width="612px" height="600">
+          <img src="./img/table_project.png" alt="Tabela de Projetos" width="412px" height="250px">
           <h3>Tela de Cadastro de Usuário:</h3>
-          <p> Permite cadastrar usuários, selecionar ferramenta de gestão (Taiga, Trello ou Jira) e associar a projetos e usuários.</p>
-          <img src="./img/screen-register.png" alt="Cadastro de Usuário" width="612px">
-      
+          <p> Permite cadastrar usuários, selecionar ferramenta de gestão (Taiga e Jira) e associar a projetos e usuários.</p>
+          <img src="./img/screen-register.png" alt="Cadastro de Usuário" width="412px">
+          <h3>Tela de Perfil:</h3>
+          <p> Mostra os dados do Gestor.</p>
+          <img src="./img/admin_profile.png" alt="Tela de Perfil" width="412">
           <h3>Formulário de Registro:</h3> 
           <p>Campos obrigatórios:</p>
           <ul>
@@ -185,19 +202,19 @@
             <li><strong>Password:</strong> Senha de acesso</li>
             <li><strong>E-mail:</strong> E-mail válido</li>
             <li><strong>Role:</strong> ROLE_OPERATOR, ROLE_MANAGER ou ROLE_ADMIN</li>
-            <li><strong>Tools:</strong>Escolha da ferramenta de gestão de projetos, Taiga, Trello ou Jira</li>
+            <li><strong>Tools:</strong>Escolha da ferramenta de gestão de projetos, Taiga ou Jira</li>
             <li><strong>Project-Tool:</strong> Lista de projetos da ferramenta escolhida</li>
             <li><strong>User Project-Tool:</strong> Lista de usuários do projeto escolhido</li>
           </ul>
           <p>Botão Clean up: limpa os dados dos campos</p>
           <p>Botão Register: Registra o novo usuário</p>
-          <img src="./img/form_register.png" alt="Formulário de Registro" width="612px">
+          <img src="./img/form_register.png" alt="Formulário de Registro" width="412px">
           <h3>Tabela de Usuários:</h3>
-          <p> Lista usuários ativos, com opções para atualizar ou excluir dados.</p>
-          <img src="./img/table-of-users.png" alt="Tabela de Usuários" width="612px">
+          <p> Lista usuários ativos, com opções para atualizar ou excluir usuários.</p>
+          <img src="./img/table-of-users.png" alt="Tabela de Usuários" width="412px">
           <h3>Log do Sistema:</h3>
           <p> Exibe ações realizadas no sistema: usuário, ação executada e data.</p>
-          <img src="./img/system_log.png" alt="Log do Sistema" width="612px">
+          <img src="./img/system_log.png" alt="Log do Sistema" width="412px">
           
         </article>
       </section>
